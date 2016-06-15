@@ -6,18 +6,18 @@
 */
 
 // Administrador
-
+require_once("inc/administrador.php");
 
 // Seguridad
-
+require_once("inc/seguridad.php");
 
 // Archivo
+require_once("inc/archivo.php");
 
+// Entrada
+require_once("inc/entrada.php");
 
 // Generales
-
-
-// Otros
-
+require_once("inc/generales.php");
 
 ?>
