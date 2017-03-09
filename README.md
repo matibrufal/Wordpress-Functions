@@ -1,23 +1,13 @@
-<h1>Wordpress Functions</h1>
+# Wordpress Functions
 
-<p>
-	Compilado con funciones para wordpress.
-</p>
+This is a recopilation of some useful functions to use when you develop a Wordpress theme.
 
-<h4>Administrador</h4>
+```PHP
 
-<h4>Seguridad</h4>
+<?php
 
-<ul>
-	<li>Remover mensajes de errores en wp-login</li>
-	<li>Remover versión de Wordpress en meta tags y rss feed</li>
-	<li></li>
-	<li></li>
-	<li></li>
-</ul>
+echo 'hola';
 
-<h4>Archivo</h4>
+?>
 
-<h4>Entrada</h4>
-
-<h4>Generales</h4>
+```
