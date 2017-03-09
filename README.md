@@ -26,8 +26,7 @@ This is a recopilation of some useful functions to use when you develop a Wordpr
 					'thumbnail'
 				),
 				'taxonomies' => array (
-					'post_tag',
-					'category'
+					'skills'
 				),
 				'menu_position' => 2,
 				'menu_icon' => 'dashicons-portfolio'
@@ -40,9 +39,23 @@ This is a recopilation of some useful functions to use when you develop a Wordpr
 ```
 
 ### Create a Custom Taxonomy
+[Codex](https://codex.wordpress.org/Function_Reference/register_taxonomy)
 
 ```PHP
 
+	// Create Taxonomy
 
+	function create_taxonomy() {
+		register_taxonomy(
+			'skills', 'portfolio',
+			array(
+				'label' => __( 'Skills' ),
+				'rewrite' => array('with_front' => false, 'slug' => 'skills' ),
+				'hierarchical' => true,
+			)
+		);
+	}
+
+	add_action('init', 'create_taxonomy');
 
 ```
